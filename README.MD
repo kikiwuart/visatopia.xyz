@@ -6,10 +6,10 @@
 
 ## How to use the template? 
 1. Duplicate the template.html, rename it <b>firstname_lastname.html</b>. Put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/html">html folder</a>
-2. Name your images as <i>firstname_lastname1.jpg, firstname_lastname2.jpg, firstname_lastname3.jpg.....</i>. Put them in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/images">images folder</a>
-3. Name your 3D model <i>firstnam_lastname.obj</i>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/assets">assets folder</a>
-4. Name your 3D material, texture <i>firstnam_lastname.jpg</i>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/assets">assets folder</a>
-5. If you are going to use a custom css to modify your page, name it <i>firstname_lastname.css</i>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/css">css folder</a>
+2. Name your images as <b>firstname_lastname1.jpg, firstname_lastname2.jpg, firstname_lastname3.jpg.....</b>. Put them in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/images">images folder</a>
+3. Name your 3D model <b>firstnam_lastname.obj</b>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/assets">assets folder</a>
+4. Name your 3D material, texture <b>firstnam_lastname.jpg</b>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/assets">assets folder</a>
+5. If you are going to use a custom css to modify your page, name it <b>firstname_lastname.css</b>, put it in the <a href="https://github.com/uglykiki/art75-2020-exhibition/tree/master/css">css folder</a>
 6. Check your html file again, make sure all the pathes of your images, css are right. Then save, commit, and push. 
 
 # Example of Virtual Museum
