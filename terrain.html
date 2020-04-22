@@ -14,20 +14,10 @@
         src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
-    <script
-        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
 </head>
 
 <body>
     <a-scene>
-        <a-assets>
-            <a-asset-item id="Roboto" src="https://cdn.aframe.io/fonts/Roboto-msdf.json"></a-asset-item>
-        </a-assets>
-
-        <a-entity text-geometry="value: Hello World;" font="#Roboto" size="12" material="color: #66E1B4"
-            position="0 3 0" rotation="0 20 0"></a-entity>
-        <a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Via URL." size="12" position="0 3 0">
-        </a-entity>
         <!-- Add sky -->
         <a-sky geometry="primitive: sphere"
             material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
@@ -38,7 +28,7 @@
         </a-entity>
         <!-- Add terrain -->
         <a-entity color-terrain-model='colorScheme: inferno;
-                                       DEM: url(assets/noctis-3500-clip-envi.bin);
+                                       DEM: url(noctis-3500-clip-envi.bin);
                                        planeWidth: 50;
                                        planeHeight: 70;
                                        segmentsWidth: 197;
