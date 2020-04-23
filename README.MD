@@ -36,7 +36,7 @@ Please run HTTP Server: `python -m SimpleHTTPServer`
 5. [A-frame Environment Component](https://github.com/supermedium/aframe-environment-component)
 
 # To-do
-[ ]Fix Cursor Issue
-[ ]Add Camera movement
-[ ]A-frame Menu (Link to About page )
-[ ]Responsive Design!!
+- [] Fix Cursor Issue
+- [] Add Camera movement
+- [] A-frame Menu (Link to About page )
+- [] Responsive Design!!
