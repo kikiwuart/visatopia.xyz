@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Virtual Institute of Simulacra Art</title>
-    <meta name="description" content="">
+    <meta name="description" content="Digital museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script
@@ -15,73 +15,84 @@
     <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
     <script
         src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 </head>
 
 <body>
+    <div class="webVR">
+        <a-scene>
+            <!-- Asset Loader -->
+            <a-assets>
+                <a-asset-item id="kiki-obj1" src="assets/kiki-museum.obj"></a-asset-item>
+                <a-asset-item id="kiki-obj2" src="assets/kiki-museum-2.obj"></a-asset-item>
+                <a-asset-item id="kiki-mtl1" src="assets/kiki-museum.mtl"></a-asset-item>
+                <a-asset-item id="kiki-mtl2" src="assets/kiki-museum-2.mtl"></a-asset-item>
+                <a-asset-item id="Roboto" src="https://cdn.aframe.io/fonts/Roboto-msdf.json"></a-asset-item>
+            </a-assets>
 
-    <a-scene effects="bloom, fxaa" bloom="radius: 0.5" fxaa>
-        <!-- Asset Loader -->
-        <a-assets>
-            <a-asset-item id="kiki-obj1" src="assets/kiki-museum.obj"></a-asset-item>
-            <a-asset-item id="kiki-obj2" src="assets/kiki-museum-2.obj"></a-asset-item>
-            <a-asset-item id="kiki-mtl1" src="assets/kiki-museum.mtl"></a-asset-item>
-            <a-asset-item id="kiki-mtl2" src="assets/kiki-museum-2.mtl"></a-asset-item>
-            <a-asset-item id="Roboto" src="https://cdn.aframe.io/fonts/Roboto-msdf.json"></a-asset-item>
-        </a-assets>
+            <!-- Load Models -->
+            <a-entity id="kiki-museum1" class="clickable" obj-model="obj: #kiki-obj1; mtl: #kiki-mtl1"
+                material=" metalness:1" position="0 1 -10" scale="2 4 2">
+            </a-entity>
+            <a-entity id="kiki-museum2" class="clickable" obj-model="obj: #kiki-obj2"
+                material=" color: #030303; metalness:1; opacity:0.5" position="0 1 -10" scale="2 4 2">
+            </a-entity>
 
-        <!-- Load Models -->
-        <a-entity id="kiki-museum1" class="clickable" obj-model="obj: #kiki-obj1; mtl: #kiki-mtl1"
-            material=" metalness:1" position="0 1 -10" scale="2 4 2">
-        </a-entity>
-        <a-entity id="kiki-museum2" class="clickable" obj-model="obj: #kiki-obj2"
-            material=" color: #030303; metalness:1; opacity:0.5" position="0 1 -10" scale="2 4 2">
-        </a-entity>
+            <!-- Add Gradient sky -->
+            <a-sky geometry="primitive: sphere"
+                material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
+            </a-sky>
 
-        <!-- Add sky -->
-        <a-sky geometry="primitive: sphere"
-            material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
-        </a-sky>
+            <!-- Add Title -->
+            <a-entity id="title" text-geometry="value: Virtual Institute of Simulacra Art;" font="#Roboto" size="24"
+                material="color: #ffb4dd; metalness: 0.5" position="0 6 -5" rotation="0 0 0"></a-entity>
 
-        <!-- Add Title -->
-        <a-entity id="title" text-geometry="value: Virtual Institute of Simulacra Art;" font="#Roboto" size="24"
-            material="color: #ffb4dd; metalness: 0.5" position="0 6 -5" rotation="0 0 0"></a-entity>
-        <!-- Add Light -->
-        <a-entity light="type: ambient; color: #CCC"></a-entity>
-        <a-entity light="type: directional; color: #EEE; intensity:5" position="0 20 -20"></a-entity>
+            <!-- Add Light -->
+            <a-entity light="type: ambient; color: #CCC"></a-entity>
+            <a-entity light="type: directional; color: #EEE; intensity:5" position="0 20 -20"></a-entity>
 
-        <!-- Add terrain -->
-        <a-entity color-terrain-model='colorScheme: inferno;
+            <!-- Add terrain -->
+            <a-entity color-terrain-model='colorScheme: inferno;
                                        DEM: url(assets/noctis-3500-clip-envi.bin);
                                        planeWidth: 50;
                                        planeHeight: 70;
-                                       segmentsWidth: 197;
+                                       segmentsWidth: 185;
                                        segmentsHeight: 199;
                                        zPosition: 1' rotation="5 0 0">
-        </a-entity>
-        <!-- Add Ocean -->
-        <a-ocean color="#20f7fc" width="50" depth="50" density="50" speed="1" position="0 0.6 0">
-        </a-ocean>
-        <!-- Add Particle System -->
-        <a-entity id="rain" particle-system="preset: snow; color: #24CAFF; particleCount: 5000"></a-entity>
+            </a-entity>
 
-        <!-- Add Camera -->
-        <!-- <a-entity id="rig" position="0 4 3">
+            <!-- Add Ocean -->
+            <a-ocean color="#20f7fc" width="50" depth="50" density="50" speed="1" position="0 0.6 0">
+            </a-ocean>
+
+            <!-- Add Particle System -->
+            <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 1000"></a-entity>
+
+            <!-- Add Camera -->
+            <!-- <a-entity id="rig" position="0 4 3">
                         <a-camera id="camera"></a-camera>
                     </a-entity> -->
-        <a-entity camera look-controls position="0 4 3">
-            <a-cursor id="cursor" position="0 4 3" color="#20f7fc" raycaster="objects: .clickable">
-                <a-animation begin="mouseenter" attribute="color" dur="50" from="white" to="springgreen"></a-animation>
-                <a-animation begin="mouseleave" attribute="color" dur="50" from="springgreen" to="white"></a-animation>
-                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
-                    to="1 1 1" dur="50"></a-animation>
-            </a-cursor>
-        </a-entity>
+            <a-entity camera look-controls position="0 4 3">
+                <a-cursor id="cursor" position="0 4 3" color="#20f7fc" raycaster="objects: .clickable">
+                    <a-animation begin="mouseenter" attribute="color" dur="50" from="white" to="springgreen">
+                    </a-animation>
+                    <a-animation begin="mouseleave" attribute="color" dur="50" from="springgreen" to="white">
+                    </a-animation>
+                    <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
+                        to="1 1 1" dur="50"></a-animation>
+                </a-cursor>
+            </a-entity>
 
-    </a-scene>
+        </a-scene>
+
+    </div>
     <script>
         var kiki_museum1 = document.querySelector('#kiki-museum1');
         kiki_museum1.addEventListener('click', function () {
             window.location.href = 'html/template.html';
         })
     </script>
+
+
 </body>
