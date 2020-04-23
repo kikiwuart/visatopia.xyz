@@ -33,3 +33,4 @@ Run HTTP Server: python -m SimpleHTTPServer
 2. [A-Frame Entity Component System](https://aframe.io/docs/1.0.0/introduction/entity-component-system.html#example)
 3. [a-frame-terrain-component](https://github.com/bryik/aframe-terrain-model-component)
 4. [A-frame Particle System](https://github.com/IdeaSpaceVR/aframe-particle-system-component)
+5. [A-frame Environment Component](https://github.com/supermedium/aframe-environment-component)
