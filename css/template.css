@@ -15,14 +15,20 @@ body {
   overflow: auto;
   top: 0;
   bottom: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 .sidebar-icon {
   width: 40px;
   height: 40px;
-  background-color: blueviolet;
+  background: rgb(190, 115, 255);
+  background: linear-gradient(
+    147deg,
+    rgba(190, 115, 255, 1) 0%,
+    rgba(0, 9, 255, 1) 100%
+  );
   position: absolute;
   z-index: 3;
-  transition: 1s ease-in-out;
 }
 .sidebar:hover {
   right: 0px;
@@ -39,7 +45,6 @@ nav {
   left: 40px;
   overflow: auto;
 }
-
 nav a {
   color: white;
   display: block;
@@ -83,4 +88,27 @@ a:hover {
 }
 .back:hover {
   color: black;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  iframe {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 90%;
+  }
+  iframe {
+    height: 240px;
+  }
 }

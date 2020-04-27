@@ -1,0 +1,107 @@
+/* Don't change this template!!! */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  width: 280px;
+  height: 800px;
+  right: -240px;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  background: rgb(190, 115, 255);
+  background: linear-gradient(
+    147deg,
+    rgba(190, 115, 255, 1) 0%,
+    rgba(0, 9, 255, 1) 100%
+  );
+  position: absolute;
+  z-index: 3;
+}
+.sidebar:hover {
+  right: 0px;
+}
+
+nav {
+  width: 220px;
+  padding: 16px 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  padding: 16px;
+  color: white;
+  left: 40px;
+  overflow: auto;
+}
+
+nav a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+nav a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.container {
+  width: 60%;
+  margin: 72px auto;
+}
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+.artist-list a {
+  display: block;
+  padding-bottom: 8px;
+}
+.back {
+  display: block;
+  color: gray;
+  width: 160px;
+  margin: 48px auto;
+}
+.back:hover {
+  color: black;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 90%;
+  }
+}
