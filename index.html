@@ -32,6 +32,14 @@
         skyColor: #3600f0; 
         grid: dots" particle-system="preset:dust; particleCount:2500">
 
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #CCC; intensity: 0.4"></a-entity>
+
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 20 20" raycaster="objects: .clickable">
+        </a-entity>
+
         <!-- Asset Loader -->
         <a-assets>
             <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
@@ -66,6 +74,7 @@
             animation__mouseenter="property: scale; to: 0.05 0.05 0.05; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 0.05 0.05 0.05; startEvents: mouseleave; dur: 500">
         </a-entity>
+
         <!-- Add Ocean -->
         <a-ocean color="#20f7fc" width="150" depth="150" density="80" speed="1" position="0 0.8 0">
         </a-ocean>
@@ -74,17 +83,10 @@
         <a-entity id="about" class="clickable" text-geometry="value: ABOUT" font="#EXO" size="64"
             material="color: white" position="0 25 -5" rotation="0 0  0">
         </a-entity>
-
-
-        <a-entity light="type: ambient; color: #CCC; intensity: 0.4"></a-entity>
-
-        <!-- Add Camera -->
-        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 20 20" raycaster="objects: .clickable">
-        </a-entity>
-
     </a-scene>
 
+
+    <!-- Click Function -->
     <script>
         var about = document.querySelector('#about');
         var Aram = document.querySelector('#Aram');
@@ -101,7 +103,7 @@
             window.location.href = 'html/Patrick_Moorehead.html';
         })
         Jason.addEventListener('click', function () {
-            window.location.href = 'html/.html';
+            window.location.href = 'about.html';
         })
         Julian.addEventListener('click', function () {
             window.location.href = 'html/juliankern.html';
