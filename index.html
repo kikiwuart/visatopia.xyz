@@ -7,102 +7,104 @@
     <meta name="description" content="Digital museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script
-        src="https://unpkg.com/aframe-terrain-model-component@0.2.3/dist/aframe-terrain-model-component.min.js"></script>
-    <script
-        src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
     <script
         src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
     <script
         src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script
+        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
 </head>
 
 <body>
-    <a-scene>
+    <a-scene environment="
+    lighting: point;
+    lightPosition: 0 10 0;
+        fog:0;
+        ground: canyon; 
+        preset:default;
+        groundTexture: walkernoise;
+        groundColor: #ffae3c; 
+        groundColor2: #ff7b9d; 
+        groundYScale: 15;
+        skyType: gradient; 
+        skyColor: #3600f0; 
+        grid: dots" particle-system="preset:dust; particleCount:2500">
+
         <!-- Asset Loader -->
         <a-assets>
-            <a-asset-item id="kiki-obj1" src="assets/kiki-museum.obj"></a-asset-item>
-            <a-asset-item id="kiki-obj2" src="assets/kiki-museum-2.obj"></a-asset-item>
-            <a-asset-item id="kiki-mtl1" src="assets/kiki-museum.mtl"></a-asset-item>
-            <a-asset-item id="kiki-mtl2" src="assets/kiki-museum-2.mtl"></a-asset-item>
+            <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
+            <a-asset-item id="patrick_obj" src="assets/Patrick_Moorehead.obj"></a-asset-item>
+            <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
+            <a-asset-item id="aram_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
             <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
-        <a-entity id="kiki-museum1" class="clickable" obj-model="obj: #kiki-obj1; mtl: #kiki-mtl1"
-            material=" metalness:1" position="0 1 -10" scale="2 4 2"
-            animation__mouseenter="property: scale; to: 2.2 4.2 2.2; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 2 4 2; startEvents: mouseleave; dur: 500">
-        </a-entity>
-        <a-entity id="kiki-museum2" class="clickable" obj-model="obj: #kiki-obj2"
-            material=" color: #030303; metalness:1; opacity:0.5" position="0 1 -10" scale="2 4 2"
-            animation__mouseenter="property: scale; to: 2.2 4.2 2.2; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 2 4 2; startEvents: mouseleave; dur: 500">
+        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material=" roughness: 0.5; metalness:0.8;"
+            position="-5 1 -10" rotation="-90 0 0" scale="4 4 4"
+            animation__mouseenter="property: scale; to: 4.2 4.2 4.2; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 4 4 4; startEvents: mouseleave; dur: 500">
         </a-entity>
 
-        <!-- Add Gradient sky -->
-        <a-sky geometry=" primitive: sphere"
-            material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
-        </a-sky>
+        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj"
+            material=" roughness: 0.5; metalness:0.1; color:#7bbf00 " position="0 0 0" scale="0.05 0.05 0.05"
+            rotation="-90 0 0"
+            animation__mouseenter="property: scale; to: 0.07 0.07 0.07; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.05 0.05 0.05; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Patrick" class="clickable" obj-model="obj: #patrick_obj" material=" metalness:0.1; color:#ffb64f"
+            position="5 11 5" scale="1 1 1" rotation="0 0 0"
+            animation__mouseenter="property: position; to: 5 12 5; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: position; to: 5 11 5; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Aram" class="clickable" obj-model="obj: #aram_obj" material=" metalness:0.2; color:#ff4f9f"
+            position="-10 0 10" scale="0.05 0.05 0.05" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 0.05 0.05 0.05; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.05 0.05 0.05; startEvents: mouseleave; dur: 500">
+        </a-entity>
+        <!-- Add Ocean -->
+        <a-ocean color="#20f7fc" width="150" depth="150" density="80" speed="1" position="0 0.8 0">
+        </a-ocean>
 
         <!-- Add Text -->
         <a-entity id="about" class="clickable" text-geometry="value: ABOUT" font="#EXO" size="64"
-            material="color: white" position="0 25 0" rotation="0 0  0"
-            animation__mouseenter="property: components.material.material.color; to: blue; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: components.material.material.color; to: white; startEvents: mouseleave; dur: 500">
+            material="color: white" position="0 25 -5" rotation="0 0  0">
         </a-entity>
 
-        <!-- Add Light -->
-        <a-entity light="type: ambient; color: #CCC"></a-entity>
-        <a-entity light="type: directional; color: #EEE; intensity:5" position="0 20 -20"></a-entity>
 
-        <!-- Add terrain -->
-        <a-entity color-terrain-model='colorScheme: inferno;
-                                       DEM: url(assets/noctis-3500-clip-envi.bin);
-                                       planeWidth: 100;
-                                       planeHeight: 100;
-                                       segmentsWidth: 190;
-                                       segmentsHeight: 199;
-                                       zPosition: 1' rotation="5 0 0">
-        </a-entity>
-
-        <!-- Add Ocean -->
-        <a-ocean color="#20f7fc" width="100" depth="100" density="50" speed="1" position="0 0.6 0">
-        </a-ocean>
-
-        <!-- Add Particle System -->
-        <a-entity particle-system="preset: snow; color: #24CAFF; particleCount: 1500"></a-entity>
+        <a-entity light="type: ambient; color: #CCC; intensity: 0.4"></a-entity>
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 25 20" raycaster="objects: .clickable"
-            animation__mouseenter="property: position; to: 0 20 0; startEvents: mouseenter; dur: 500">
+        <a-entity camera look-controls wasd-controls position="0 20 20" raycaster="objects: .clickable">
         </a-entity>
 
-        <!-- <a-entity camera look-controls wasd-controls position="0 30 3">
-                <a-cursor id="cursor" position="0 0 -1" color="white" raycaster="objects: .clickable">
-                    <a-animation begin="mouseenter" attribute="color" dur="50" from="white" to="springgreen">
-                    </a-animation>
-                    <a-animation begin="mouseleave" attribute="color" dur="50" from="springgreen" to="white">
-                    </a-animation>
-                    <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
-                        to="1 1 1" dur="50"></a-animation>
-                </a-cursor>
-            </a-entity> -->
-
     </a-scene>
+
     <script>
         var about = document.querySelector('#about');
-        var kiki_museum1 = document.querySelector('#kiki-museum1');
-        kiki_museum1.addEventListener('click', function () {
-            window.location.href = 'html/template.html';
-        })
+        var Aram = document.querySelector('#Aram');
+        var Julian = document.querySelector('#Julian');
+        var Patrick = document.querySelector('#Patrick');
+        var Jason = document.querySelector('#Jason');
         about.addEventListener('click', function () {
             window.location.href = 'about.html';
         })
+        Aram.addEventListener('click', function () {
+            window.location.href = 'html/Aram_Magholi.html';
+        })
+        Patrick.addEventListener('click', function () {
+            window.location.href = 'html/Patrick_Moorehead.html';
+        })
+        Jason.addEventListener('click', function () {
+            window.location.href = 'html/.html';
+        })
+        Julian.addEventListener('click', function () {
+            window.location.href = 'html/juliankern.html';
+        })
     </script>
-
-
 </body>
