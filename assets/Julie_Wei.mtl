@@ -1,0 +1,934 @@
+newmtl Glass
+illum 7
+Kd 0.995591 1 1
+adobe_interior_color 1 1 1
+Ni 1.8
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 1
+Pr 0
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Wood Parquet
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Wood Parquet_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Wood Parquet_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Wood Parquet_baseColor.png
+norm VirtualInstallationOBJ/Wood Parquet_normal.psd
+disp VirtualInstallationOBJ/Wood Parquet_height.psd
+
+newmtl Scratched Concrete
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete_height.psd
+
+newmtl Scratched Concrete 2
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 2_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 2_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 2_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 2_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 2_height.psd
+
+newmtl Scratched Concrete 3
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 3_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 3_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 3_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 3_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 3_height.psd
+
+newmtl Scratched Concrete 4
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 4_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 4_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 4_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 4_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 4_height.psd
+
+newmtl Scratched Concrete 5
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 5_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 5_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 5_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 5_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 5_height.psd
+
+newmtl Scratched Concrete 6
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 6_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 6_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 6_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 6_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 6_height.psd
+
+newmtl Scratched Concrete 7
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 7_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 7_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 7_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 7_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 7_height.psd
+
+newmtl Scratched Concrete 8
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 8_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 8_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 8_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 8_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 8_height.psd
+
+newmtl Scratched Concrete 9
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 9_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 9_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 9_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 9_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 9_height.psd
+
+newmtl Scratched Concrete 10
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 10_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 10_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 10_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 10_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 10_height.psd
+
+newmtl Scratched Concrete 11
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 11_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 11_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 11_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 11_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 11_height.psd
+
+newmtl Scratched Concrete 13
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 13_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 13_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 13_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 13_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 13_height.psd
+
+newmtl Scratched Concrete 14
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 14_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 14_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 14_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 14_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 14_height.psd
+
+newmtl Scratched Concrete 15
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 15_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 15_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 15_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 15_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 15_height.psd
+
+newmtl Scratched Concrete 16
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 16_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 16_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 16_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 16_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 16_height.psd
+
+newmtl Scratched Concrete 17
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 17_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 17_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 17_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 17_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 17_height.psd
+
+newmtl Scratched Concrete 18
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 18_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 18_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 18_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 18_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 18_height.psd
+
+newmtl Scratched Concrete 19
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 19_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 19_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 19_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 19_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 19_height.psd
+
+newmtl Clean Gold 3
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 3_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 3_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 3_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 3_normal.png
+disp VirtualInstallationOBJ/Clean Gold 3_height.png
+
+newmtl Clean Gold 4
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 4_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 4_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 4_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 4_normal.png
+disp VirtualInstallationOBJ/Clean Gold 4_height.png
+
+newmtl Clean Gold 5
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 5_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 5_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 5_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 5_normal.png
+disp VirtualInstallationOBJ/Clean Gold 5_height.png
+
+newmtl Scratched Concrete 21
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 21_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 21_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 21_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 21_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 21_height.psd
+
+newmtl Clean Gold 6
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 6_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 6_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 6_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 6_normal.png
+disp VirtualInstallationOBJ/Clean Gold 6_height.png
+
+newmtl Clean Gold 7
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 7_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 7_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 7_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 7_normal.png
+disp VirtualInstallationOBJ/Clean Gold 7_height.png
+
+newmtl Frosted Glass
+illum 7
+Kd 1 1 1
+adobe_interior_color 1 1 1
+Ni 1.33
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 1
+Pr 0
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm VirtualInstallationOBJ/Frosted Glass_normal.jpg
+
+newmtl Wood Parquet 2
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Wood Parquet 2_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Wood Parquet 2_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Wood Parquet 2_baseColor.png
+norm VirtualInstallationOBJ/Wood Parquet 2_normal.psd
+disp VirtualInstallationOBJ/Wood Parquet 2_height.psd
+
+newmtl Clean Gold 8
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 8_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 8_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 8_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 8_normal.png
+disp VirtualInstallationOBJ/Clean Gold 8_height.png
+
+newmtl Clean Gold
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold_normal.png
+disp VirtualInstallationOBJ/Clean Gold_height.png
+
+newmtl Wood Parquet 3
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Wood Parquet 3_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Wood Parquet 3_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Wood Parquet 3_baseColor.png
+norm VirtualInstallationOBJ/Wood Parquet 3_normal.psd
+disp VirtualInstallationOBJ/Wood Parquet 3_height.psd
+
+newmtl Clean Gold 9
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 9_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 9_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 9_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 9_normal.png
+disp VirtualInstallationOBJ/Clean Gold 9_height.png
+
+newmtl Scratched Concrete 22
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Scratched Concrete 22_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Scratched Concrete 22_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Scratched Concrete 22_baseColor.png
+norm VirtualInstallationOBJ/Scratched Concrete 22_normal.psd
+disp VirtualInstallationOBJ/Scratched Concrete 22_height.psd
+
+newmtl Clean Gold 10
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 10_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 10_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 10_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 10_normal.png
+disp VirtualInstallationOBJ/Clean Gold 10_height.png
+
+newmtl Clean Gold 11
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 11_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 11_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 11_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 11_normal.png
+disp VirtualInstallationOBJ/Clean Gold 11_height.png
+
+newmtl Natural Worn Leather
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Natural Worn Leather_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Natural Worn Leather_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Natural Worn Leather_baseColor.png
+norm VirtualInstallationOBJ/Natural Worn Leather_normal.psd
+disp VirtualInstallationOBJ/Natural Worn Leather_height.psd
+
+newmtl Natural Worn Leather 2
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Natural Worn Leather 2_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Natural Worn Leather 2_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Natural Worn Leather 2_baseColor.png
+norm VirtualInstallationOBJ/Natural Worn Leather 2_normal.psd
+disp VirtualInstallationOBJ/Natural Worn Leather 2_height.psd
+
+newmtl Felt
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Felt_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Felt_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Felt_baseColor.png
+norm VirtualInstallationOBJ/Felt_normal.psd
+disp VirtualInstallationOBJ/Felt_height.psd
+
+newmtl Valencia Marble 2
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Valencia Marble 2_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Valencia Marble 2_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Valencia Marble 2_baseColor.png
+norm VirtualInstallationOBJ/Valencia Marble 2_normal.png
+disp VirtualInstallationOBJ/Valencia Marble 2_height.png
+
+newmtl Wood Parquet 4
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Wood Parquet 4_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Wood Parquet 4_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Wood Parquet 4_baseColor.png
+norm VirtualInstallationOBJ/Wood Parquet 4_normal.psd
+disp VirtualInstallationOBJ/Wood Parquet 4_height.psd
+
+newmtl Ceramic Tiles
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Ceramic Tiles_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Ceramic Tiles_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Ceramic Tiles_baseColor.png
+norm VirtualInstallationOBJ/Ceramic Tiles_normal.psd
+disp VirtualInstallationOBJ/Ceramic Tiles_height.psd
+
+newmtl Cardboard
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Cardboard_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Cardboard_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Cardboard_baseColor.png
+norm VirtualInstallationOBJ/Cardboard_normal.psd
+disp VirtualInstallationOBJ/Cardboard_height.psd
+
+newmtl Ceramic Tiles 2
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Ceramic Tiles 2_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Ceramic Tiles 2_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Ceramic Tiles 2_baseColor.png
+norm VirtualInstallationOBJ/Ceramic Tiles 2_normal.psd
+disp VirtualInstallationOBJ/Ceramic Tiles 2_height.psd
+
+newmtl Clean Gold 12
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 12_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 12_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 12_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 12_normal.png
+disp VirtualInstallationOBJ/Clean Gold 12_height.png
+
+newmtl Clean Gold 13
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Clean Gold 13_metallic.png
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Clean Gold 13_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Clean Gold 13_baseColor.png
+norm VirtualInstallationOBJ/Clean Gold 13_normal.png
+disp VirtualInstallationOBJ/Clean Gold 13_height.png
+
+newmtl Ceramic Tiles 3
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Ceramic Tiles 3_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Ceramic Tiles 3_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Ceramic Tiles 3_baseColor.png
+norm VirtualInstallationOBJ/Ceramic Tiles 3_normal.psd
+disp VirtualInstallationOBJ/Ceramic Tiles 3_height.psd
+
+newmtl Ceramic Tiles 4
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm VirtualInstallationOBJ/Ceramic Tiles 4_metallic.psd
+adobe_translucence 0
+map_Pr VirtualInstallationOBJ/Ceramic Tiles 4_roughness.psd
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd VirtualInstallationOBJ/Ceramic Tiles 4_baseColor.png
+norm VirtualInstallationOBJ/Ceramic Tiles 4_normal.psd
+disp VirtualInstallationOBJ/Ceramic Tiles 4_height.psd
