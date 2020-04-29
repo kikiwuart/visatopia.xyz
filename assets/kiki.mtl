@@ -1,0 +1,58 @@
+# Blender MTL File: 'virtual-museum.blend'
+# Material Count: 5
+
+newmtl Material
+Ns 609.192134
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.003033 0.003033 0.003033
+Ni 0.450000
+d 1.000000
+illum 2
+map_Kd /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/Marble062/3K/Marble062_COL_3K.jpg
+refl /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/Marble062/3K/Marble062_GLOSS_3K.jpg
+
+newmtl Material.001
+Ns 664.053267
+Ka 0.897436 0.897436 0.897436
+Kd 0.800000 0.714070 0.419385
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/MetalSpottyDiscoloration001/METALNESS/3K/MetalSpottyDiscoloration001_NRM_3K_METALNESS.jpg
+map_Ns /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/MetalSpottyDiscoloration001/METALNESS/3K/MetalSpottyDiscoloration001_ROUGHNESS_3K_METALNESS.jpg
+refl /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/MetalSpottyDiscoloration001/METALNESS/3K/MetalSpottyDiscoloration001_METALNESS_3K_METALNESS.jpg
+
+newmtl Material.002
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.544167 0.692447
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump /Users/kikiwu/Documents/SJSU/00_DMA/3D/02_textures/MetalCorrodedHeavy001/METALNESS/3K/MetalCorrodedHeavy001_NRM_3K_METALNESS.jpg
+
+newmtl Material.003
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.371882 0.269625 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.004
+Ns 900.000000
+Ka 0.076923 0.076923 0.076923
+Kd 0.371882 0.269625 0.800000
+Ks 0.948718 0.948718 0.948718
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
