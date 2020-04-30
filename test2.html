@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebVR Test</title>
+    <meta name="description" content="Digital museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
+    <script
+        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script
+        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
+</head>
+
+<body>
+    <a-scene device-orientation-permission-ui="enabled: false">
+        <a-sky color="#6EBAA7"></a-sky>
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #CCC; intensity: 4"></a-entity>
+
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 5 5" raycaster="objects: .clickable">
+        </a-entity>
+
+        <!-- Asset Loader -->
+        <a-assets>
+            <a-asset-item id="test" response-type="arraybuffer" src="assets/maya.glb"></a-asset-item>
+            <a-asset-item id="test2" src="assets/kiki.obj"></a-asset-item>
+            <a-asset-item id="test2-mtl" src="assets/kiki.mtl"></a-asset-item>
+        </a-assets>
+
+        <!-- Load Models -->
+        <a-entity gltf-model="#test" scals="2 2 2" position="0 0 0"></a-entity>
+        <a-entity obj-model="obj: #test2; mtl: #test2-mtl" scals="1 1 1" position="0 0 0"></a-entity>
+    </a-scene>
+</body>
