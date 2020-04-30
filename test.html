@@ -42,46 +42,59 @@
             animation__mouseleave="property: scale; to: 2 4 2; startEvents: mouseleave; dur: 500">
         </a-entity>
 
-        <a-entity environment="lightPosition: 1 5 -2;
-            ground: canyon; 
-            groundTexture: walkernoise;
-            groundColor: #eb8fff; 
-            groundColor2: #4a0ab8; 
-            groundYScale: 10;
-            skyType: gradient; 
-            skyColor: #5cd8ff; 
-            dressing: pyramids;
-            dressingAmount: 10;
-            grid: none">
+        <!-- Add Gradient sky -->
+        <a-sky geometry=" primitive: sphere"
+            material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
+        </a-sky>
 
+        <!-- Add Text -->
+        <a-entity id="about" class="clickable" text-geometry="value: ABOUT" font="#EXO" size="64"
+            material="color: white" position="0 25 0" rotation="0 0  0"
+            animation__mouseenter="property: components.material.material.color; to: blue; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: components.material.material.color; to: white; startEvents: mouseleave; dur: 500">
         </a-entity>
+
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #CCC"></a-entity>
+        <a-entity light="type: directional; color: #EEE; intensity:5" position="0 20 -20"></a-entity>
+
+        <!-- Add terrain -->
+        <a-entity color-terrain-model='colorScheme: inferno;
+                                       DEM: url(assets/noctis-3500-clip-envi.bin);
+                                       planeWidth: 100;
+                                       planeHeight: 100;
+                                       segmentsWidth: 190;
+                                       segmentsHeight: 199;
+                                       zPosition: 1' rotation="5 0 0">
+        </a-entity>
+
         <!-- Add Ocean -->
         <a-ocean color="#20f7fc" width="100" depth="100" density="50" speed="1" position="0 0.6 0">
         </a-ocean>
 
-        <!-- Add Text -->
-        <a-entity id="about" class="clickable" text-geometry="value: ABOUT" font="#EXO" size="64"
-            material="color: white" position="0 25 -5" rotation="0 0  0">
-        </a-entity>
-
-
-
-
-        <a-entity light="type: ambient; color: #CCC; intensity: 0.5"></a-entity>
+        <!-- Add Particle System -->
+        <a-entity particle-system="preset: snow; color: #24CAFF; particleCount: 1500"></a-entity>
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 30 20" raycaster="objects: .clickable"
+        <a-entity camera look-controls wasd-controls position="0 25 20" raycaster="objects: .clickable"
             animation__mouseenter="property: position; to: 0 20 0; startEvents: mouseenter; dur: 500">
         </a-entity>
 
-
-
+        <!-- <a-entity camera look-controls wasd-controls position="0 30 3">
+                <a-cursor id="cursor" position="0 0 -1" color="white" raycaster="objects: .clickable">
+                    <a-animation begin="mouseenter" attribute="color" dur="50" from="white" to="springgreen">
+                    </a-animation>
+                    <a-animation begin="mouseleave" attribute="color" dur="50" from="springgreen" to="white">
+                    </a-animation>
+                    <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
+                        to="1 1 1" dur="50"></a-animation>
+                </a-cursor>
+            </a-entity> -->
 
     </a-scene>
-
     <script>
-        var about = document.querySelector('#about')
+        var about = document.querySelector('#about');
         var kiki_museum1 = document.querySelector('#kiki-museum1');
         kiki_museum1.addEventListener('click', function () {
             window.location.href = 'html/template.html';
