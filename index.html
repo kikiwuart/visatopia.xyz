@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Virtual Institute of Simulacra Art</title>
+    <title>Vistopia</title>
     <meta name="description" content="Digital museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -30,7 +30,9 @@
         groundYScale: 15;
         skyType: gradient; 
         skyColor: #3600f0; 
-        grid: dots" particle-system="preset:dust; particleCount:2500">
+        grid: dots">
+
+        <!-- particle-system="preset:dust; particleCount:2500 -->
 
         <!-- Add Light -->
         <a-entity light="type: ambient; color: #CCC; intensity: 0.4"></a-entity>
@@ -42,16 +44,22 @@
 
         <!-- Asset Loader -->
         <a-assets>
+            <!-- Load Font -->
+            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
+
+            <!-- Load Model -->
             <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
             <a-asset-item id="patrick_obj" src="assets/Patrick_Moorehead.obj"></a-asset-item>
             <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
             <a-asset-item id="aram_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
-            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
+            <a-asset-item id="sophia_obj" src="assets/SophiaMartinez_minecraftmuseum.obj"></a-asset-item>
+            <a-asset-item id="sophia_mtl" src="assets/SophiaMartinez_minecraftmuseum.mtl"></a-asset-item>
+            <a-asset-item id="tiffany_obj" src="assets/Tiffany.obj"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
         <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material=" roughness: 0.5; metalness:0.8;"
-            position="-5 1 -10" rotation="-90 0 0" scale="4 4 4"
+            position="0 1 -10" rotation="-90 90 0" scale="4 4 4"
             animation__mouseenter="property: scale; to: 4.2 4.2 4.2; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 4 4 4; startEvents: mouseleave; dur: 500">
         </a-entity>
@@ -59,7 +67,7 @@
         <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj"
             material=" roughness: 0.5; metalness:0.1; color:#7bbf00 " position="0 0 0" scale="0.05 0.05 0.05"
             rotation="-90 0 0"
-            animation__mouseenter="property: scale; to: 0.07 0.07 0.07; startEvents: mouseenter; dur: 500"
+            animation__mouseenter="property: scale; to: 0.06 0.06 0.06; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 0.05 0.05 0.05; startEvents: mouseleave; dur: 500">
         </a-entity>
 
@@ -70,9 +78,21 @@
         </a-entity>
 
         <a-entity id="Aram" class="clickable" obj-model="obj: #aram_obj" material=" metalness:0.2; color:#ff4f9f"
-            position="-10 0 10" scale="0.05 0.05 0.05" rotation="0 0 0"
-            animation__mouseenter="property: scale; to: 0.05 0.05 0.05; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.05 0.05 0.05; startEvents: mouseleave; dur: 500">
+            position="-10 0 10" scale="0.07 0.07 0.07" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 0.08 0.08 0.08; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.07 0.07 0.07; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Sophia" class="clickable" obj-model="obj: #sophia_obj" material=" metalness:0.2; color:#ac70ff"
+            position="-30 2 -15" scale="0.3 0.3 0.3" rotation="0 180 0"
+            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Tiffany" class="clickable" obj-model="obj: #tiffany_obj" material=" metalness:0.2; color:#f9f5ff"
+            position="30 2 -15" scale="1 1 1" rotation=" -90 0 0"
+            animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
 
         <!-- Add Ocean -->
@@ -93,6 +113,8 @@
         var Julian = document.querySelector('#Julian');
         var Patrick = document.querySelector('#Patrick');
         var Jason = document.querySelector('#Jason');
+        var Sophia = document.querySelector('#Sophia');
+        var Tiffany = document.querySelector('#Tiffany')
         about.addEventListener('click', function () {
             window.location.href = 'html/lookfotme.html';
         })
@@ -103,10 +125,19 @@
             window.location.href = 'html/Patrick_Moorehead.html';
         })
         Jason.addEventListener('click', function () {
-            window.location.href = 'about.html';
+            window.location.href = 'html/lookforme.html';
         })
         Julian.addEventListener('click', function () {
             window.location.href = 'html/juliankern.html';
         })
+        Sophia.addEventListener('click', function () {
+            window.location.href = 'html/Sophia_Martinez.html';
+        })
+
+        Tiffany.addEventListener('click', function () {
+            window.location.href = 'html/Tiffany.html';
+        })
+
+
     </script>
 </body>
