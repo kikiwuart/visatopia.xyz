@@ -9,17 +9,13 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
-    <script
-        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
-    <script
-        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-    <script
-        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
 </head>
 
 <body>
     <a-scene device-orientation-permission-ui="enabled: false">
-        <a-sky color="#6EBAA7"></a-sky>
+        <a-sky geometry=" primitive: sphere"
+            material="shader: threeColorGradientShader; topColor: #4820fc; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
+        </a-sky>
         <!-- Add Light -->
         <a-entity light="type: ambient; color: #CCC; intensity: 4"></a-entity>
 
@@ -30,13 +26,15 @@
 
         <!-- Asset Loader -->
         <a-assets>
-            <a-asset-item id="test" response-type="arraybuffer" src="assets/maya.glb"></a-asset-item>
+            <a-asset-item id="glb-model" response-type="arraybuffer" src="assets/out.glb"></a-asset-item>
+            <a-asset-item id="gltf-model" response-type="arraybuffer" src="assets/backpack/scene.gltf"></a-asset-item>
             <a-asset-item id="test2" src="assets/kiki.obj"></a-asset-item>
             <a-asset-item id="test2-mtl" src="assets/kiki.mtl"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
-        <a-entity gltf-model="#test" scals="2 2 2" position="0 0 0"></a-entity>
-        <a-entity obj-model="obj: #test2; mtl: #test2-mtl" scals="1 1 1" position="0 0 0"></a-entity>
+        <a-entity gltf-model="#gltf-model" scals="0.05 0.05 0.05" position="30 30 0"></a-entity>
+        <a-entity gltf-model="#glb-model" scals="1 1 1" position="0 0 0"></a-entity>
+        <!-- <a-entity obj-model="obj: #test2; mtl: #test2-mtl" scals="1 1 1" position="0 0 0"></a-entity> -->
     </a-scene>
 </body>
