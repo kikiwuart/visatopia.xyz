@@ -1,8 +1,11 @@
+# About Visatopia
+This is a virtual exhibition of SJSU Art 75 class. 
+
 # Read Me before you start the project!!!!
 ## Basic project Structure
 1. A WebVR home page(index.html) contains many clickable mini museums(3dmodel, obj files)
-2. Every mini-museum links to a responsive webpage that shows the artist's works. 
-3. An about page(about.html) shows the statement of this exhibition and a list of participant artists
+2. Every mini-museum links to a responsive webpage that shows the artist's works - 3D render images, video arts.  
+3. An about page(about.html) shows the statement of this exhibition and a list of participant artists.
 
 ## Wrok with github
 1. Clone this repository to your local folder.
@@ -26,17 +29,12 @@ Please run HTTP Server: `python -m SimpleHTTPServer`
 2. [Digital Museum of Digital Art](https://dimoda.art/past-exhibitions)
 3. [Tzina](http://tzina.space/)
 4. [Art At Time Like This](https://artatatimelikethis.com/)
-5. [Uncensored Library](https://uncensoredlibrary.com/en)
+5. [SJSU BA 197 Senior project](https://artspaces.kunstmatrix.com/en/exhibition/638026/alone-t-o-g-e-t-h-e-r)
+6. [Uncensored Library](https://uncensoredlibrary.com/en)
 
-# Resource for This project
+# Resource of This project
 1. [A-Frame](https://aframe.io/docs/1.0.0/introduction/)
 2. [A-Frame Entity Component System](https://aframe.io/docs/1.0.0/introduction/entity-component-system.html#example)
 3. [a-frame-terrain-component](https://github.com/bryik/aframe-terrain-model-component)
 4. [A-frame Particle System](https://github.com/IdeaSpaceVR/aframe-particle-system-component)
 5. [A-frame Environment Component](https://github.com/supermedium/aframe-environment-component)
-
-# To-do
-- [] Fix Cursor Issue
-- [] Add Camera movement
-- [] A-frame Menu (Link to About page )
-- [] Responsive Design!!
