@@ -51,66 +51,16 @@
             <!-- Load Font -->
             <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Model -->
-            <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
-            <a-asset-item id="patrick_obj" src="assets/Patrick_Moorehead.obj"></a-asset-item>
-            <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
-            <a-asset-item id="aram_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
-            <a-asset-item id="sophia_obj" src="assets/SophiaMartinez_minecraftmuseum.obj"></a-asset-item>
+
+
+
             <a-asset-item id="sophia_mtl" src="assets/SophiaMartinez_minecraftmuseum.mtl"></a-asset-item>
-            <a-asset-item id="tiffany_obj" src="assets/Tiffany.obj"></a-asset-item>
-            <a-asset-item id="cris_obj" src="assets/crisgarcia.obj"></a-asset-item>
-            <a-asset-item id="diego_obj" src="assets/diego.obj"></a-asset-item>
+
+
+
         </a-assets>
 
         <!-- Load Models -->
-        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:0.2; color:#f9f5ff"
-            position="0 1 -10" rotation="-90 90 0" scale="3 3 3"
-            animation__mouseenter="property: scale; to: 3.1 3.1 3.1; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 3 3 3; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj" material="metalness:0.2; color:#f9f5ff"
-            position="0 0 0" scale="0.04 0.04 0.04" rotation="-90 0 0"
-            animation__mouseenter="property: scale; to: 0.042 0.042 0.042; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.04 0.04 0.04; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Patrick" class="clickable" obj-model="obj: #patrick_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="5 11 5" scale="1 1 1" rotation="0 0 0"
-            animation__mouseenter="property: position; to: 5 12 5; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: position; to: 5 11 5; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Aram" class="clickable" obj-model="obj: #aram_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-10 0 10" scale="0.07 0.07 0.07" rotation="0 0 0"
-            animation__mouseenter="property: scale; to: 0.08 0.08 0.08; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.07 0.07 0.07; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Sophia" class="clickable" obj-model="obj: #sophia_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-30 2 -15" scale="0.3 0.3 0.3" rotation="0 180 0"
-            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Tiffany" class="clickable" obj-model="obj: #tiffany_obj" material="metalness:0.2; color:#f9f5ff"
-            position="30 2 -35" scale="1 1 1" rotation=" -90 0 0"
-            animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-30 8 15" scale="1.1 1.1 1.1" rotation="0 0 0"
-            animation__mouseenter="property: scale; to: 1.2 1.2 1.2; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 1.1 1.1 1.1; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
-        <a-entity id="Diego" class="clickable" obj-model="obj: #diego_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-20 1 10" scale="0.3 0.3 0.3" rotation="-90 0 0"
-            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
-        </a-entity>
-
         <!-- Add Ocean -->
         <a-ocean color="#20f7fc" width="150" depth="150" density="50" speed="1" position="0 0.8 0">
         </a-ocean>

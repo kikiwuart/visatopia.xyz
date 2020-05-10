@@ -19,27 +19,12 @@
 
 <body>
     <a-scene device-orientation-permission-ui="enabled: false" environment="
-    lighting: point;
-    lightPosition: 0 10 0;
-        fog:0;
-        ground: canyon; 
-        preset:default;
-        groundTexture: walkernoise;
-        groundColor: #ffae3c; 
-        groundColor2: #ff7b9d; 
-        groundYScale: 8;
-        skyType: gradient; 
-        skyColor: #3600f0; 
-        dressing: mushrooms;
-        dressingAmount: 50;
-        dressingColor: #e2f710;
-        dressingScale: 5;
-        grid: dots">
+            preset: egypt;">
 
-        <!-- particle-system="preset:dust; particleCount:2500 -->
+        <!-- particle-system=" preset:dust; particleCount:2500 -->
 
         <!-- Add Light -->
-        <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
+        <a-entity light="type: ambient; color: #3600f0; intensity: 0.4"></a-entity>
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
@@ -51,14 +36,46 @@
             <!-- Load Font -->
             <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Model -->
+            <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
+            <a-asset-item id="cris_obj" src="assets/crisgarcia.obj"></a-asset-item>
+            <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
+        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:0.2; color:#f9f5ff"
+            position="0 1 -10" rotation="-90 90 0" scale="3 3 3"
+            animation__mouseenter="property: scale; to: 3.1 3.1 3.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 3 3 3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj" material="metalness:0.2; color:#f9f5ff"
+            position="0 0 0" scale="0.04 0.04 0.04" rotation="-90 0 0"
+            animation__mouseenter="property: scale; to: 0.042 0.042 0.042; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.04 0.04 0.04; startEvents: mouseleave; dur: 500">
+        </a-entity>
+        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material=" metalness:0.2; color:#f9f5ff"
+            position="-30 8 15" scale="1.1 1.1 1.1" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 1.2 1.2 1.2; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 1.1 1.1 1.1; startEvents: mouseleave; dur: 500">
+        </a-entity>
 
     </a-scene>
 
 
     <!-- Click Function -->
     <script>
+        var about = document.querySelector('#about');
+        var Julian = document.querySelector('#Julian');
+        var Jason = document.querySelector('#Jason');
+        var Diego = document.querySelector('#Diego');
+        about.addEventListener('click', function () {
+            window.location.href = 'html/lookfotme.html';
+        })
+        Jason.addEventListener('click', function () {
+            window.location.href = 'html/lookforme.html';
+        })
+        Julian.addEventListener('click', function () {
+            window.location.href = 'html/juliankern.html';
+        })
     </script>
 </body>

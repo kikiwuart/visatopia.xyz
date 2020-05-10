@@ -19,24 +19,7 @@
 
 <body>
     <a-scene device-orientation-permission-ui="enabled: false" environment="
-    lighting: point;
-    lightPosition: 0 10 0;
-        fog:0;
-        ground: canyon; 
-        preset:default;
-        groundTexture: walkernoise;
-        groundColor: #ffae3c; 
-        groundColor2: #ff7b9d; 
-        groundYScale: 8;
-        skyType: gradient; 
-        skyColor: #3600f0; 
-        dressing: mushrooms;
-        dressingAmount: 50;
-        dressingColor: #e2f710;
-        dressingScale: 5;
-        grid: dots">
-
-        <!-- particle-system="preset:dust; particleCount:2500 -->
+    preset: forest;">
 
         <!-- Add Light -->
         <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
@@ -51,14 +34,48 @@
             <!-- Load Font -->
             <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Model -->
+            <a-asset-item id="tiffany_obj" src="assets/Tiffany.obj"></a-asset-item>
+            <a-asset-item id="diego_obj" src="assets/diego.obj"></a-asset-item>
+            <a-asset-item id="sophia_obj" src="assets/SophiaMartinez_minecraftmuseum.obj"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
 
+        <a-entity id="Sophia" class="clickable" obj-model="obj: #sophia_obj" material=" metalness:0.2; color:#f9f5ff"
+            position="-30 2 -15" scale="0.3 0.3 0.3" rotation="0 180 0"
+            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Tiffany" class="clickable" obj-model="obj: #tiffany_obj" material="metalness:0.2; color:#f9f5ff"
+            position="30 2 -35" scale="1 1 1" rotation=" -90 0 0"
+            animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Diego" class="clickable" obj-model="obj: #diego_obj" material=" metalness:0.2; color:#f9f5ff"
+            position="-20 1 10" scale="0.3 0.3 0.3" rotation="-90 0 0"
+            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
+        </a-entity>
     </a-scene>
 
 
     <!-- Click Function -->
     <script>
+        var about = document.querySelector('#about');
+        var Sophia = document.querySelector('#Sophia');
+        var Tiffany = document.querySelector('#Tiffany');
+        var Diego = document.querySelector('#Diego');
+        Sophia.addEventListener('click', function () {
+            window.location.href = 'html/Sophia_Martinez.html';
+        })
+
+        Tiffany.addEventListener('click', function () {
+            window.location.href = 'html/Tiffany.html';
+        })
+        Diego.addEventListener('click', function () {
+            window.location.href = 'html/diego.html';
+        })
     </script>
 </body>
