@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Visatopia</title>
+    <title>Oblivion - VISA</title>
     <meta name="description" content="Digital museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -19,16 +19,20 @@
 
 <body>
     <a-scene device-orientation-permission-ui="enabled: false" environment="
-            preset: egypt;">
+            preset: tron;
+            ground: hills;
+            shadow: true;
+            dressingScale: 20;
+            horizonColor:#c9a7ff">
 
-        <!-- particle-system=" preset:dust; particleCount:2500 -->
+        <!--  -->
 
         <!-- Add Light -->
-        <a-entity light="type: ambient; color: #3600f0; intensity: 0.4"></a-entity>
+        <a-entity light="type: ambient; color: #ffffff; intensity:0.5"></a-entity>
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 20 20" raycaster="objects: .clickable">
+        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
         </a-entity>
 
         <!-- Asset Loader -->
@@ -39,24 +43,31 @@
             <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
             <a-asset-item id="cris_obj" src="assets/crisgarcia.obj"></a-asset-item>
             <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
+            <a-asset-item id="chengyuan_glb" src="assets/Chengyuan_Shi.obj"></a-asset-item>
         </a-assets>
 
         <!-- Load Models -->
-        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:0.2; color:#f9f5ff"
+        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:1; color:#ff0808"
             position="0 1 -10" rotation="-90 90 0" scale="3 3 3"
             animation__mouseenter="property: scale; to: 3.1 3.1 3.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 3 3 3; startEvents: mouseleave; dur: 500">
         </a-entity>
 
-        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj" material="metalness:0.2; color:#f9f5ff"
+        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj" material="metalness:1; color:#ff0808;"
             position="0 0 0" scale="0.04 0.04 0.04" rotation="-90 0 0"
             animation__mouseenter="property: scale; to: 0.042 0.042 0.042; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 0.04 0.04 0.04; startEvents: mouseleave; dur: 500">
         </a-entity>
-        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-30 8 15" scale="1.1 1.1 1.1" rotation="0 0 0"
+        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material=" metalness:1; color:#ff0808"
+            position="-20 8 15" scale="1.1 1.1 1.1" rotation="0 0 0"
             animation__mouseenter="property: scale; to: 1.2 1.2 1.2; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1.1 1.1 1.1; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Chengyuan" class="clickable" obj-model="obj: #chengyuan_glb"
+            material=" metalness:1; color:#ff0808" position="20 8 15" scale="0.005 0.005 0.005" rotation="0 180 0"
+            animation__mouseenter="property: scale; to: 0.005 0.005 0.005; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.005 0.005 0.005; startEvents: mouseleave; dur: 500">
         </a-entity>
 
     </a-scene>
@@ -67,7 +78,8 @@
         var about = document.querySelector('#about');
         var Julian = document.querySelector('#Julian');
         var Jason = document.querySelector('#Jason');
-        var Diego = document.querySelector('#Diego');
+        var Cris = document.querySelector('#Cris');
+        var Chengyuan = document.querySelector('#Chengyuan');
         about.addEventListener('click', function () {
             window.location.href = 'html/lookfotme.html';
         })
@@ -76,6 +88,9 @@
         })
         Julian.addEventListener('click', function () {
             window.location.href = 'html/juliankern.html';
+        })
+        Chengyuan.addEventListener('click', function () {
+            window.location.href = 'html/Chengyuan_Shi.html';
         })
     </script>
 </body>
