@@ -63,31 +63,46 @@ nav a:hover {
 }
 
 a {
-  color: blueviolet;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
   color: blueviolet;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .text-center {
   text-align: center;
 }
-.artist-list a {
-  display: block;
-  padding-bottom: 8px;
-}
+
 .back {
   display: block;
   color: gray;
-  width: 160px;
+  width: 240px;
   margin: 48px auto;
+  text-align:center;
 }
 .back:hover {
-  color: black;
+  color:black;
+  text-decoration: none;
+  
 }
+.black-link{
+  color:black;
+}
+.black-link:hover{
+  color: blueviolet;
+}
+.artist-list a {
+  color: blueviolet;
+  display: block;
+  padding-bottom: 8px;
+}
+.artist-list a:hover{
+  text-decoration: underline;
+}
+
 
 /* Responsive Design */
 @media only screen and (max-width: 1024px) {
