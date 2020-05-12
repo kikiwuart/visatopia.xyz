@@ -21,17 +21,10 @@
     <a-scene device-orientation-permission-ui="enabled: false" environment="
     preset: forest;
     skyColor: #15c7ff">
-
-        <!-- Add Light -->
-        <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
-
-        <!-- Add Camera -->
-        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
-        </a-entity>
-
         <!-- Asset Loader -->
         <a-assets>
+            <!-- Load Sounds -->
+            <audio id="sound" src="sounds/oasis.mp3"></audio>
             <!-- Load Font -->
             <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Model -->
@@ -41,11 +34,23 @@
             <a-asset-item id="sharon_obj" src="assets/sharon4.obj"></a-asset-item>
             <a-asset-item id="sharon_obj2" src="assets/sharon3.obj"></a-asset-item>
             <a-asset-item id="jozey_obj" src="assets/jozey.obj"></a-asset-item>
-
         </a-assets>
 
-        <!-- Load Models -->
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
 
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
+        </a-entity>
+
+
+        <!-- Load Sounds -->
+        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
+
+        <!-- <a-entity sound="src: #sound" position="0 0 0"></a-entity> -->
+
+        <!-- Load Models -->
         <a-entity id="Sophia" class="clickable" obj-model="obj: #sophia_obj" material=" metalness:0.2; color:#f9f5ff"
             position="-30 2 -15" scale="0.3 0.3 0.3" rotation="0 180 0"
             animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
