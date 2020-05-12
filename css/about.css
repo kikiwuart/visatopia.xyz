@@ -61,6 +61,9 @@ nav a:hover {
   width: 60%;
   margin: 72px auto;
 }
+.container img{
+  width:100%;
+}
 
 a {
   color: black;
@@ -93,6 +96,13 @@ a:hover {
 }
 .black-link:hover{
   color: blueviolet;
+}
+.purple-link{
+  color: blueviolet;
+}
+.purple-link:hover{
+  text-decoration: underline;
+
 }
 .artist-list a {
   color: blueviolet;
