@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Neverland - VISA</title>
+    <meta name="description" content="Digital museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
+    <script
+        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script
+        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
+</head>
+
+<body>
+    <a-scene device-orientation-permission-ui="enabled: false" environment="
+            ground: canyon; 
+            preset:default;
+            groundTexture: walkernoise;
+            groundColor: #ffae3c; 
+            groundColor2: #ff7b9d; 
+            groundYScale: 6;
+            skyType: gradient; 
+            skyColor: #3600f0; 
+            dressing: mushrooms;
+            dressingAmount: 50;
+            dressingColor: #e2f710;
+            dressingScale: 5;
+            grid: dots">
+
+        <!-- Asset Loader -->
+        <a-assets>
+            <!-- Load Font -->
+            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
+            <!-- Load Sound -->
+            <audio id="sound" src="sounds/neverland.mp3"></audio>
+            <!-- Load Model -->
+        </a-assets>
+
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
+
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
+        </a-entity>
+
+        <!-- Load Sounds -->
+        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
+
+        <!-- Load Models -->
+
+        <a-entity id="Diego" class="clickable" obj-model="obj: #diego_obj" material=" metalness:0.2; color:#f9f5ff"
+            position="-20 1 10" scale="0.3 0.3 0.3" rotation="-90 0 0"
+            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+    </a-scene>
+
+
+    <!-- Click Function -->
+    <script>
+
+    </script>
+</body>
