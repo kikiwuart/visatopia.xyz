@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Oblivion - VISA</title>
+    <meta name="description" content="Digital museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
+    <script
+        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script
+        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
+</head>
+
+<body>
+    <a-scene device-orientation-permission-ui="enabled: false" environment="
+            preset: tron;
+            ground: hills;
+            shadow: true;
+            dressingScale: 20;
+            horizonColor:#c9a7ff">
+
+        <!-- Asset Loader -->
+        <a-assets>
+            <!-- Load Font -->
+            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
+
+            <!-- Load Sound -->
+            <audio id="sound" src="sounds/oblivion.mp3"></audio>
+            <!-- Load Model -->
+            <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
+            <a-asset-item id="cris_obj" src="assets/crisgarcia.obj"></a-asset-item>
+            <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
+            <a-asset-item id="chengyuan_glb" src="assets/Chengyuan_Shi.obj"></a-asset-item>
+        </a-assets>
+
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #ffffff; intensity:0.5"></a-entity>
+
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
+        </a-entity>
+
+
+
+        <!-- Load Sounds -->
+        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
+
+        <!-- Load Models -->
+        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:1; color:#ff0808"
+            position="0 1 -10" rotation="-90 90 0" scale="3 3 3"
+            animation__mouseenter="property: scale; to: 3.1 3.1 3.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 3 3 3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Julian" class="clickable" obj-model="obj: #julian_obj" material="metalness:1; color:#ff0808;"
+            position="0 0 0" scale="0.04 0.04 0.04" rotation="-90 0 0"
+            animation__mouseenter="property: scale; to: 0.042 0.042 0.042; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.04 0.04 0.04; startEvents: mouseleave; dur: 500">
+        </a-entity>
+        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material=" metalness:1; color:#ff0808"
+            position="-20 8 15" scale="1.1 1.1 1.1" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 1.2 1.2 1.2; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 1.1 1.1 1.1; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Chengyuan" class="clickable" obj-model="obj: #chengyuan_glb"
+            material=" metalness:1; color:#ff0808" position="20 8 15" scale="0.005 0.005 0.005" rotation="0 180 0"
+            animation__mouseenter="property: scale; to: 0.005 0.005 0.005; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.005 0.005 0.005; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+    </a-scene>
+
+
+    <!-- Click Function -->
+    <script>
+        var about = document.querySelector('#about');
+        var Julian = document.querySelector('#Julian');
+        var Jason = document.querySelector('#Jason');
+        var Cris = document.querySelector('#Cris');
+        var Chengyuan = document.querySelector('#Chengyuan');
+        about.addEventListener('click', function () {
+            window.location.href = 'html/lookfotme.html';
+        })
+        Jason.addEventListener('click', function () {
+            window.location.href = 'html/lookforme.html';
+        })
+        Julian.addEventListener('click', function () {
+            window.location.href = 'html/juliankern.html';
+        })
+        Chengyuan.addEventListener('click', function () {
+            window.location.href = 'html/Chengyuan_Shi.html';
+        })
+    </script>
+</body>
