@@ -30,26 +30,26 @@
             <img id="neverland-texture" src="images/neverland.png">
         </a-assets>
 
-        <!-- <a-entity class="clickable" id="Oblivion" geometry="primitive: sphere" material="src: #oblivion-texture;"
-            position="-8 -2 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-            animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
+        <a-entity class="clickable" id="Oblivion" geometry="primitive: sphere" material="src: #oblivion-texture;"
+            position="-6 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            animation__mouseenter="property: scale; to: 1.1 1.1 1.1; property: components.material.material.color; type: color; to: white; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
         <a-entity class="clickable" id="Sanctuary" geometry="primitive: sphere" material="src: #sanctuary-texture"
-            position="-1 -2 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            position="-2 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
         <a-entity class="clickable" id="Oasis" geometry="primitive: sphere" material="src: #oasis-texture"
-            position="2 0 -3" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            position="2 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
         <a-entity class="clickable" id="Neverland" geometry="primitive: sphere" material="src: #neverland-texture"
-            position="5 2 -2" scale="1 1 1" animation="property: rotation; to: 0 360 0 ; loop: true; dur: 10000"
+            position="6 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0 ; loop: true; dur: 10000"
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
-        </a-entity> -->
+        </a-entity>
 
         <!-- Add Gradient sky -->
         <a-sky geometry=" primitive: sphere"
@@ -61,12 +61,36 @@
             material="color: white" position="0 2 0" rotation="0 0  0">
         </a-entity> -->
 
-        <a-entity text="value: Hello World; font: #EXO; align:center" position="0 0 -1" scale="2 2 2"></a-entity>
+        <a-entity
+            text="font: https://cdn.aframe.io/fonts/Monoid.fnt; value: Virtual Institute of Simulation Art; align:center"
+            position="0 0.6 -1" scale="2 2 2">
+        </a-entity>
+
+        <a-entity material="opacity:0.5;transparent: true; color:red"
+            text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Please Select Your Destination; align:center"
+            position="0 0.5 -1" scale="1 1 1">
+        </a-entity>
+
+        <a-entity text="font: https://cdn.aframe.io/fonts/Monoid.fnt; value: I: Crisis; align:center"
+            position="-6 -1.5 -5" scale="4 4 4">
+        </a-entity>
+
+        <a-entity text="font: https://cdn.aframe.io/fonts/Monoid.fnt; value: II: Sanctuary; align:center"
+            position="-2 -1.5 -5" scale="4 4 4">
+        </a-entity>
+        <a-entity text="font: https://cdn.aframe.io/fonts/Monoid.fnt; value: III: Oasis; align:center"
+            position="2 -1.5 -5" scale="4 4 4">
+        </a-entity>
+        <a-entity text="font: https://cdn.aframe.io/fonts/Monoid.fnt; value: IV: Unmapped; align:center"
+            position="6 -1.5 -5" scale="4 4 4">
+        </a-entity>
 
 
 
         <!-- Add Light -->
-        <a-entity light="type: ambient; color: #CCC; intensity:1.2"></a-entity>
+        <a-entity light="type: ambient; color: #CCC; intensity:0.8"></a-entity>
+
+        <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="-1 2 0"></a-entity>
         <!-- Add Particle System -->
         <a-entity particle-system="preset: dust; color: #24CAFF; particleCount: 1000"></a-entity>
         <!-- Add Camera -->
