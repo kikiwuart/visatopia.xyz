@@ -6,6 +6,7 @@
     <title>Sanctuary - VISA</title>
     <meta name="description" content="Digital museum">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/scene.css">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
@@ -18,6 +19,14 @@
 </head>
 
 <body>
+    <div class="UI">
+        <h1>II: Sanctuary</h1>
+        <p>Use <span>W A S D</span>to navigate the scene. </p>
+        <a href="index.html">
+            < Back</a>
+                &nbsp;|&nbsp;
+                <a href="about.html">About</a>
+    </div>
     <a-scene device-orientation-permission-ui="enabled: false" environment="
         preset: contact;
         ground: canyon;
@@ -33,8 +42,8 @@
             <!-- Load Sound -->
             <audio id="sound" src="sounds/sanctuary.mp3"></audio>
             <!-- Load Model -->
-            <a-asset-item id="patrick_obj" src="assets/Patrick_Moorehead.obj"></a-asset-item>
-            <a-asset-item id="aram_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
+            <a-asset-item id="chengyuan_glb" src="assets/Chengyuan_Shi.obj"></a-asset-item>
+
             <a-asset-item id="quan_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
             <a-asset-item id="jiajie_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
             <!-- <a-asset-item id="juan_obj" src="assets/juan.obj"></a-asset-item> -->
@@ -52,17 +61,12 @@
         <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
 
         <!-- Load Models -->
-        <a-entity id="Patrick" class="clickable" obj-model="obj: #patrick_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="5 11 5" scale="1 1 1" rotation="0 0 0"
-            animation__mouseenter="property: position; to: 5 12 5; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: position; to: 5 11 5; startEvents: mouseleave; dur: 500">
+        <a-entity id="Chengyuan" class="clickable" obj-model="obj: #chengyuan_glb"
+            material=" metalness:1; color:#ff0808" position="20 8 15" scale="0.005 0.005 0.005" rotation="0 180 0"
+            animation__mouseenter="property: scale; to: 0.005 0.005 0.005; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.005 0.005 0.005; startEvents: mouseleave; dur: 500">
         </a-entity>
 
-        <a-entity id="Aram" class="clickable" obj-model="obj: #aram_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-10 0 10" scale="0.07 0.07 0.07" rotation="0 0 0"
-            animation__mouseenter="property: scale; to: 0.08 0.08 0.08; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.07 0.07 0.07; startEvents: mouseleave; dur: 500">
-        </a-entity>
 
         <!-- <a-entity id="Juan" class="clickable" obj-model="obj: #juan_obj" material=" metalness:0.2; color:#f9f5ff"
             position="-10 3 0" scale="1 1 1" rotation="0 0 0"
@@ -75,17 +79,6 @@
 
     <!-- Click Function -->
     <script>
-        var about = document.querySelector('#about');
-        var Aram = document.querySelector('#Aram');
-        var Patrick = document.querySelector('#Patrick');
-        about.addEventListener('click', function () {
-            window.location.href = 'html/lookfotme.html';
-        })
-        Aram.addEventListener('click', function () {
-            window.location.href = 'html/Aram_Magholi.html';
-        })
-        Patrick.addEventListener('click', function () {
-            window.location.href = 'html/Patrick_Moorehead.html';
-        })
+
     </script>
 </body>

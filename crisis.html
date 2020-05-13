@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crisis - VISA</title>
+    <meta name="description" content="Digital museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/scene.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
+    <script
+        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script
+        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
+</head>
+
+<body>
+    <div class="UI">
+        <h1>I: Crisis</h1>
+        <p>Use <span>W A S D</span>to navigate the scene. </p>
+        <a href="index.html">
+            < Back</a>
+                &nbsp;|&nbsp;
+                <a href="about.html">About</a>
+    </div>
+    <a-scene device-orientation-permission-ui="enabled: false" environment="
+            preset: tron;
+            ground: hills;
+            groundColor: #0a0a0a;
+            shadow: true;
+            skyColor:#2d2d2d;
+            horizonColor: #cccccc;
+            dressing: none;">
+
+        <!-- Asset Loader -->
+        <a-assets>
+            <!-- Load Sound -->
+            <audio id="sound" src="sounds/oblivion.mp3"></audio>
+            <!-- Load Model -->
+            <a-asset-item id="jason_obj" src="assets/Nguyen_Jason.obj"></a-asset-item>
+            <a-asset-item id="cris_obj" src="assets/crisgarcia.obj"></a-asset-item>
+            <a-asset-item id="julian_obj" src="assets/Kern_Julian.obj"></a-asset-item>
+
+            <a-asset-item id="patrick_obj" src="assets/Patrick_Moorehead.obj"></a-asset-item>
+            <a-asset-item id="aram_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
+        </a-assets>
+
+        <!-- Add Light -->
+        <a-entity light="type: ambient; color: #ffffff; intensity:0.5"></a-entity>
+
+        <!-- Add Camera -->
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+        <a-entity camera look-controls wasd-controls position="0 10 10" raycaster="objects: .clickable">
+        </a-entity>
+
+
+
+
+        <!-- Load Sounds -->
+        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
+
+        <!-- Load Models -->
+        <a-entity id="Jason" class="clickable" obj-model="obj: #jason_obj" material="metalness:1; color:#e3e3e3"
+            position="0 1 -8" rotation="-90 90 0" scale="4 4 4"
+            animation__mouseenter="property: scale; to: 4.1 4.1 4.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 4 4 4; startEvents: mouseleave; dur: 500">
+        </a-entity>
+        <a-entity id="Patrick" class="clickable" obj-model="obj: #patrick_obj" material="metalness:1; color:#e3e3e3"
+            position="5 11 -3" scale="1 1 1"
+            animation__mouseenter="property: position; to: 5 12 -3; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: position; to: 5 11 -3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Aram" class="clickable" obj-model="obj: #aram_obj" material="metalness:1; color:#e3e3e3"
+            position="-15 0 70" scale="0.3 0.3 0.3" rotation="0 90 0"
+            animation__mouseenter="property: scale; to: 0.31 0.31 0.31; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
+        </a-entity>
+
+        <a-entity id="Cris" class="clickable" obj-model="obj: #cris_obj" material="metalness:0.8; color:#e3e3e3"
+            position="-15 3 20" scale="1.1 1.1 1.1" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 1.2 1.2 1.2; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 1.1 1.1 1.1; startEvents: mouseleave; dur: 500">
+        </a-entity>
+    </a-scene>
+
+
+    <!-- Click Function -->
+    <script>
+        var Jason = document.querySelector('#Jason');
+        var Cris = document.querySelector('#Cris');
+        var Aram = document.querySelector('#Aram');
+        var Patrick = document.querySelector('#Patrick');
+        Aram.addEventListener('click', function () {
+            window.location.href = 'crisis/Aram_Magholi.html';
+        })
+        Patrick.addEventListener('click', function () {
+            window.location.href = 'crisis/Patrick_Moorehead.html';
+        })
+        Jason.addEventListener('click', function () {
+            window.location.href = 'crisis/lookforme.html';
+        })
+        Cris.addEventListener('click', function () {
+            window.location.href = 'crisis/crisg.html';
+        })
+    </script>
+</body>

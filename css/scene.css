@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Unica+One&display=swap");
+.UI {
+  padding: 16px 24px;
+  width: 320px;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.UI h1 {
+  font-family: "Unica One", cursive;
+}
+.UI p {
+  font-size: 13px;
+}
+span {
+  padding: 2px 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0px 4px;
+  border-radius: 4px;
+}
+
+a {
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
