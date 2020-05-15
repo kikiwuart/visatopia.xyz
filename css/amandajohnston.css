@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding:0;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+h1 {
+  color: #fff;
+  padding: 45px;
+  padding-left: 0;
+}
+
+#interactive {
+  width: 100vw;
+  height:100vh;
+  position: fixed;
+  z-index: -999;
+}
+
+.container{
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+ul {
+color: #fff;
+float: right;
+margin-top: -90px;
+}
+
+ul li {
+  float: left;
+  padding: 20px;
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  hover: darkmagenta;
+}
+
+p {
+  color:#fff,
+}
