@@ -23,14 +23,13 @@
     <a-scene device-orientation-permission-ui="enabled: false">
         <!-- Asset Loader -->
         <a-assets>
-            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
-            <img id="oblivion-texture" src="images/oblivion.png">
+            <img id="crisis-texture" src="images/oblivion.png">
             <img id="sanctuary-texture" src="images/sanctuary.png">
             <img id="oasis-texture" src="images/oasis.png">
-            <img id="neverland-texture" src="images/neverland.png">
+            <img id="unmapped-texture" src="images/neverland.png">
         </a-assets>
 
-        <a-entity class="clickable" id="Oblivion" geometry="primitive: sphere" material="src: #oblivion-texture;"
+        <a-entity class="clickable" id="Crisis" geometry="primitive: sphere" material="src: #crisis-texture;"
             position="-6 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; property: components.material.material.color; type: color; to: white; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
@@ -45,16 +44,11 @@
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
-        <a-entity class="clickable" id="Neverland" geometry="primitive: sphere" material="src: #neverland-texture"
+        <a-entity class="clickable" id="Unmapped" geometry="primitive: sphere" material="src: #unmapped-texture"
             position="6 0 -5" scale="1 1 1" animation="property: rotation; to: 0 360 0 ; loop: true; dur: 10000"
             animation__mouseenter="property: scale; to: 1.1 1.1 1.1; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 500">
         </a-entity>
-
-        <!-- Add Gradient sky -->
-        <a-sky geometry=" primitive: sphere"
-            material="shader: threeColorGradientShader; topColor: #1c009a; middleColor: #cb8eff; bottomColor: #8400f6;offset: 0.0">
-        </a-sky>
 
         <!-- Add Text -->
         <!-- <a-entity id="about" class="clickable" text-geometry="value: ABOUT" font="#EXO" size="64" scale=" 1 1 1"
@@ -101,12 +95,12 @@
     </a-scene>
     <script>
         var about = document.querySelector('#about');
-        var Oblivion = document.querySelector('#Oblivion');
+        var Crisis = document.querySelector('#Crisis');
         var Sanctuary = document.querySelector('#Sanctuary');
         var Oasis = document.querySelector('#Oasis');
-        var Neverland = document.querySelector('#Neverland');
-        Oblivion.addEventListener('click', function () {
-            window.location.href = 'oblivion.html';
+        var Unmapped = document.querySelector('#Unmapped');
+        Crisis.addEventListener('click', function () {
+            window.location.href = 'crisis.html';
         })
         Sanctuary.addEventListener('click', function () {
             window.location.href = 'sanctuary.html';
@@ -114,8 +108,8 @@
         Oasis.addEventListener('click', function () {
             window.location.href = 'oasis.html';
         })
-        Neverland.addEventListener('click', function () {
-            window.location.href = 'neverland.html';
+        Unmapped.addEventListener('click', function () {
+            window.location.href = 'unmapped.html';
         })
         about.addEventListener('click', function () {
             window.location.href = 'about.html';

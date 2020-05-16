@@ -47,3 +47,8 @@ This experience works on desktop/mobile and with Cardboard VR, Vive, Rift, Daydr
 4. [Art At Time Like This](https://artatatimelikethis.com/)
 5. [Uncensored Library](https://uncensoredlibrary.com/en)
 
+
+# Other Reference
+1. [almossawi.com](https://almossawi.com/aframe-d3-visualization/demo/)
+2. [marpi](https://demo.marpi.pl/archan/aroha/)
+3. [finding love](https://demo.marpi.pl/archan/aroha/)

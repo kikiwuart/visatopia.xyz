@@ -30,22 +30,21 @@
     <a-scene device-orientation-permission-ui="enabled: false" environment="
         preset: contact;
         ground: canyon;
+        groundColor: #2b0e01;
         grid: dots;
-        skyColor: #fff808;
+        skyColor: #ff8d58;
         gridColor: #fffa3f;
         dressingColor: #ffffee;
+        dressing:none;
         ">
         <!-- Asset Loader -->
         <a-assets>
             <!-- Load Font -->
-            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Sound -->
             <audio id="sound" src="sounds/sanctuary.mp3"></audio>
             <!-- Load Model -->
-            <a-asset-item id="chengyuan_glb" src="assets/Chengyuan_Shi.obj"></a-asset-item>
-
-            <a-asset-item id="quan_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
-            <a-asset-item id="jiajie_obj" src="assets/Aram_Magholi.obj"></a-asset-item>
+            <a-asset-item id="chengyuan_obj" src="assets/Chengyuan_Shi.obj"></a-asset-item>
+            <a-asset-item id="julie_obj" src="assets/Julie_Wei.obj"></a-asset-item>
             <!-- <a-asset-item id="juan_obj" src="assets/juan.obj"></a-asset-item> -->
         </a-assets>
 
@@ -54,17 +53,22 @@
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 20 20" raycaster="objects: .clickable">
+        <a-entity camera look-controls wasd-controls position="0 10 0" raycaster="objects: .clickable">
         </a-entity>
 
         <!-- Load Sounds -->
-        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
+        <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="5"></a-sound>
 
         <!-- Load Models -->
-        <a-entity id="Chengyuan" class="clickable" obj-model="obj: #chengyuan_glb"
-            material=" metalness:1; color:#ff0808" position="20 8 15" scale="0.005 0.005 0.005" rotation="0 180 0"
+        <a-entity id="Chengyuan" class="clickable" obj-model="obj: #chengyuan_obj" material="color:#ebebeb"
+            position="0 2 -25" scale="0.005 0.005 0.005" rotation="0 -90 0"
             animation__mouseenter="property: scale; to: 0.005 0.005 0.005; startEvents: mouseenter; dur: 500"
             animation__mouseleave="property: scale; to: 0.005 0.005 0.005; startEvents: mouseleave; dur: 500">
+        </a-entity>
+        <a-entity id="Julie" class="clickable" obj-model="obj: #julie_obj" material="color:#ebebeb" position="0 2 0"
+            scale="0.1 0.1 0.1" rotation="0 0 0"
+            animation__mouseenter="property: scale; to: 0.1 0.1 0.1; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: scale; to: 0.1 0.1 0.1; startEvents: mouseleave; dur: 500">
         </a-entity>
 
 
