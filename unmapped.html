@@ -9,13 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
-    <script src="https://unpkg.com/@tlaukkan/aframe-three-color-gradient-shader@0.0.1/index.js"></script>
-    <script
-        src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="js/aframe-environment-map-component.min.js"></script>
     <script
         src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-    <script
-        src="https://rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/aframe-particle-system-component.js"></script>
 </head>
 
 <body>
@@ -28,47 +24,75 @@
                 <a href="about.html">About</a>
     </div>
     <a-scene device-orientation-permission-ui="enabled: false" environment="
-            ground: canyon; 
-            preset:default;
-            groundTexture: walkernoise;
-            groundColor: #ffae3c; 
-            groundColor2: #ff7b9d; 
-            groundYScale: 6;
-            skyType: gradient; 
-            skyColor: #3600f0; 
-            dressing: mushrooms;
-            dressingAmount: 50;
-            dressingColor: #e2f710;
-            dressingScale: 5;
-            grid: dots">
+            preset: tron;
+            ground: flat;
+            groundColor: #43a9ff; 
+            skyColor:#f230ff; 
+            horizonColor: #ffffff;
+            dressing: none;
+            grid: 2x2;
+            gridColor: #f230ff">
 
         <!-- Asset Loader -->
         <a-assets>
-            <!-- Load Font -->
-            <a-asset-item id="EXO" src="https://cdn.aframe.io/fonts/Exo2Bold.fnt"></a-asset-item>
             <!-- Load Sound -->
             <audio id="sound" src="sounds/neverland.mp3"></audio>
-            <!-- Load Model -->
+            <img id="andrew-texture" src="images/">
+            <img id="jordan-texture" src="images/Jordan_Window.jpg">
+            <img id="erik-texture" src="images/Gallery-View5.png">
+            <img id="hossein-texture" src="images/sphere3.png">
+            <img id="eddy-texture" src="images/Zachary_Lum_02.png">
+            <img id="mayra-texture" src="images/mayra.png">
+            <img id="brainstorm-texture" src="images/brainstorm.png">
+            <img id="brandi-texture" src="images/gallery7.png">
+            <img id="normal" src="images/metal-normal.jpeg">
+            <!-- <img id="stephen-texture" src="images/"> -->
         </a-assets>
 
         <!-- Add Light -->
-        <a-entity light="type: ambient; color: #fbd1e2; intensity: 0.4"></a-entity>
+        <a-entity light="type: ambient; intensity:0.5; color: #ffffff;" position="0 0 0">
+        </a-entity>
+
 
         <!-- Add Camera -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-        <a-entity camera look-controls wasd-controls position="0 15 20" raycaster="objects: .clickable">
+        <a-entity camera look-controls wasd-controls position="0 5 0" raycaster="objects: .clickable">
         </a-entity>
 
         <!-- Load Sounds -->
         <a-sound src="#sound" autoplay="true" position="0 0 0" loop="true" volume="10"></a-sound>
 
         <!-- Load Models -->
-
-        <a-entity id="Diego" class="clickable" obj-model="obj: #diego_obj" material=" metalness:0.2; color:#f9f5ff"
-            position="-20 1 10" scale="0.3 0.3 0.3" rotation="-90 0 0"
-            animation__mouseenter="property: scale; to: 0.32 0.32 0.32; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: scale; to: 0.3 0.3 0.3; startEvents: mouseleave; dur: 500">
-        </a-entity>
+        <a-icosahedron class="clickable" id="Jordan" radius="3" position=" 0 10 -8" rotation="0 90 0"
+            src="#jordan-texture" normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
+        <a-icosahedron class="clickable" id="Mayra" radius="3" position=" 6 10 -8" rotation="0 90 0"
+            src="#mayra-texture" normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
+        <a-icosahedron class="clickable" id="Eddy" radius="3" position=" 0 4 -8" rotation="0 90 0" src="#eddy-texture"
+            normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
+        <a-icosahedron class="clickable" id="Erik" radius="3" position=" -6 4 -8" rotation="0 90 0" src="#erik-texture"
+            normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
+        <a-icosahedron class="clickable" id="Brainstorm" radius="3" position=" 6 4 -8" rotation="0 90 0"
+            src="#brainstorm-texture" normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
+        <a-icosahedron class="clickable" id="Brandi" radius="3" position=" -6 10 -8" rotation="0 90 0"
+            src="#brandi-texture" normal-map="#normal" roughness="0"
+            animation__mouseenter="property: rotation; to: 0 -90 0; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: rotation; to: 0 90 0; startEvents: mouseleave; dur: 500">
+        </a-icosahedron>
     </a-scene>
 
 
